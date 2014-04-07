@@ -8,26 +8,19 @@
 public class NameGenerator
 {
     // instance variables - replace the example below with your own
-    private int x;
-
+ 
     /**
      * Constructor for objects of class NameGenerator
      */
-    public NameGenerator()
-    {
-        // initialise instance variables
-        x = 0;
+    public String generateStarWarsName(String apellido, String nombre, String apellidoM, String ciudad){
+        apellido = apellido.substring(0,3);
+        nombre = nombre.substring(0,3);
+        apellidoM = apellido.substring(0,3);
+        ciudad = ciudad.substring(0,3);
+        
+        return apellido + nombre + apellidoM + ciudad;
+        
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+   
 }
