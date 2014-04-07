@@ -8,15 +8,18 @@
 public class NameGenerator
 {
     // instance variables - replace the example below with your own
- 
+    private final int tres = 3;
+    private final int dos = 2;
+    private final int cero = 0;
     /**
      * Constructor for objects of class NameGenerator
      */
     public String generateStarWarsName(String apellido, String nombre, String apellidoM, String ciudad){
-        apellido = apellido.substring(0,3);
-        nombre = nombre.substring(0,3);
-        apellidoM = apellido.substring(0,3);
-        ciudad = ciudad.substring(0,3);
+        
+        apellido = apellido.substring(cero,tres);
+        nombre = nombre.substring(cero,tres);
+        apellidoM = apellidoM.substring(cero,dos);
+        ciudad = ciudad.substring(cero,tres);
         
         return apellido + nombre + apellidoM + ciudad;
         
